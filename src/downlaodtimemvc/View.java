@@ -55,8 +55,8 @@ public class View {
         filesizeTextField = new JTextField();
         speedComboBox = new JComboBox(speedTypes);
         filesizeComboBox = new JComboBox(filesizeTypes);
-        speedToTimeButton = new JButton("<html><center>Speed<br>&#9660;<br>Time</html>");
-        timeToSpeedButton = new JButton("<html><center>Speed<br>&#9650;<br>Time</html>");
+        speedToTimeButton = new JButton("<html><center>Calculate<br>Time<br>(from Speed)</html>");
+        timeToSpeedButton = new JButton("<html><center>Calculate<br>Speed<br>(from Time)</html>");
         
         //FONT
         timeLabel.setFont(new Font(timeLabel.getFont().getFontName(), Font.PLAIN, 18));
@@ -120,7 +120,7 @@ public class View {
         frame.add(mainPanel);
         
         //LAST SETTINGS AND SHOW
-        frame.setSize(550, 350);
+        frame.setSize(600, 400);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
